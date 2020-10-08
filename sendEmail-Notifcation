@@ -1,0 +1,27 @@
+To get Email Notifications
+First do go to browser search less secure gmail and on that option
+of less secure gmail
+
+then
+Go to Manage jenkins--->Configure-System---->EmailNotification
+SMTP server  smtp.gmail.com
+check box of Use SMTP Autheniction then
+Username  badalkodape@gmail.com  ##youremailid login in browser
+password  your emailid-password
+check box of Use SSL
+SMTP Port 465  ##for ssl smtp port is 465
+then
+check box of Test Configuration
+              put your email - badalkodape@gmail.com
+              &  test configuration
+              shows - mail was send successfully --to test mailid is proper and active
+              
+              
+Then
+goto maven-job---->configure--->Addpost-BuildStep---->select Email Notification
+then                                                       recipient- badalkodape@gmail.com
+                                                            check box of send email for every unsuccessful build
+                                                            check box of send separate email for individual who broke the build
+                                                            
+then make something wrong in maven goal command & build you get the email with all information and cause to fail the build
+then make changes fix and again build you get email for normal build
