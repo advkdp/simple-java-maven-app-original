@@ -1,0 +1,17 @@
+to test goto maven-job
+buil step invoke maven target
+add maven jenkins-maven
+goal test  #### test scripts are return in src folder of simple-java-maven-app
+if you get error - maven-surefire-could-not-find-forkedbooter-class
+
+then
+go to configure system
+Global properties
+Disable deferred wipeout on this node
+Environment variables	
+Tool Locations
+
+check - environmental varibles
+then add
+Name   _JAVA_OPTIONS
+value  -Djdk.net.URLClassPath.disableClassPathURLCheck=true
