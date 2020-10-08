@@ -1,0 +1,18 @@
+get this full path from jenkins dash maven-job build's console output
+/var/lib/jenkins/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
+and go to maven-job configure
+go to add build step
+add execute shell build step & put in
+command
+echo "************************"
+echo "Deploying Jar"
+echo "************************"
+java -jar /var/lib/jenkins/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
+
+save and build you gey after deploy jar succesfully output as Hello world!
+
+same you can check on terminal of jenkins server by putting command as
+java -jar /var/lib/jenkins/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
+
+you get oyput
+Hello World!
