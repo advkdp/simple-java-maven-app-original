@@ -1,0 +1,10 @@
+go to maven-job---> configure---->postbuild-actions
+archive the atifcts
+files to archive- target/*.jar
+check option Archive artifact only if build is successful
+save
+& build
+then you see in under maven-job
+                     workspace
+                     last succesful artifact
+                     my-app-1.0-SNAPSHOT.jar ---you can downlaod it by clicking on this
